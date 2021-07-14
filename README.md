@@ -24,10 +24,16 @@ It requires only a standard computer with enough RAM to run the code in the MATL
 
 
 # Instructions for Use
+## Fitting
+Set the working directory to `./TFEB_QuantitativeAnalysis/Fitting/`. 
+
++ Run the script `Main_Fitting.m` to derive the values of the time constant used for mTOR inhibition model and reported in Table 4.1. Moreover it generates also the simulations shown in Fig. 4.14B and Fig. 4.14C, i.e. the simulation with the biological hypothesis on the synergistic effect.
+
+
 ## Simulator
 Set the working directory to `./TFEB_QuantitativeAnalysis/Simulator/`. 
 
-+ Run the script `Main_Simulator.m` to generate the simulations shown in Fig. 4.6B and Fig. 4.7B, i.e. the simulation without and with the feedback hypothesis
++ Run the script `Main_Simulator.m` to generate the simulations shown in Fig. 4.6B and Fig. 4.7B, i.e. the simulation without and with the feedback hypothesis, and the simulations shown in Fig 4.15 A-B, i.e. the simulation of TFEB nuclear translocation when the cells are treated with Torin1 in combination with CHX or Bort.
 
 
 ## ExperimentAnalysis
