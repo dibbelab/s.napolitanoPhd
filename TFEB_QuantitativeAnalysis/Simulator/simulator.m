@@ -13,6 +13,12 @@ function [Time,NucTFEB] = simulator(Mod,InputLev,InitCond,dimExp)
             sel_ODEs = @OpenLoop_Fun;    %@(t,x) OpenLoop_Fun(t,x,u);
         case 'Feedback'
             sel_ODEs = @Feedback_Fun;    %@(t,x) Feedback_Fun(t,x,u);
+        case 'mTOR_Model'
+            sel_ODEs = @mTOR_Model;
+        case 'mTOR_Bort'
+            sel_ODEs = @mTOR_Bort;
+        case 'mTOR_CHX'
+            sel_ODEs = @mTOR_CHX;
             
     end
     
@@ -40,6 +46,6 @@ function [Time,NucTFEB] = simulator(Mod,InputLev,InitCond,dimExp)
         x0 = xs(end,:);
     end
     
-    NucTFEB = xsave(:,2)+ xsave(:,3);
+        NucTFEB = xsave(:,2)+ xsave(:,3);
 
 end
